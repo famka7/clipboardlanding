@@ -1,0 +1,302 @@
+:root {
+  /* primary colors */
+  --clr-p-strong-cyan: hsl(171, 66%, 44%);
+  --clr-p-light-blue: hsl(233, 100%, 69%);
+  /* neutral colors */
+  --clr-n-dark-grayish-blue: hsl(210, 10%, 33%);
+  --clr-n-grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+body {
+  font-size: 1.125rem;
+  background-color: #fff;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+/* header rules */
+header {
+  background-image: url(../images/bg-header-mobile.png);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+/* continear for items in header */
+header > .con-h {
+  width: 91%;
+  margin: 0 auto 1rem;
+  text-align: center;
+  padding: 1.8rem 1rem;
+}
+header > .con-h > * {
+  margin: 1rem 0;
+}
+/* h3 rules */
+header > .con-h > h3,
+.snippet > h3:first-of-type,
+.clip > h3:first-of-type,
+.ft > .title > h3:first-of-type,
+.end > h3:first-of-type {
+  color: var(--clr-n-dark-grayish-blue);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+header > .con-h > p,
+.snippet > p,
+.clip > p,
+.ft > .card > p,
+.end > p {
+  color: var(--clr-n-grayish-blue);
+  font-weight: 400;
+  font-size: 1rem;
+}
+header > .con-h > button,
+.btn {
+  width: 95%;
+  color: #fff;
+  margin: inherit auto;
+  padding: 1rem 1.2rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+header > .con-h > button:first-of-type,
+.btn:first-of-type {
+  background-color: var(--clr-p-strong-cyan);
+}
+header > .con-h > button:last-child,
+.btn:last-child {
+  background-color: var(--clr-p-light-blue);
+}
+/* hover state  */
+header > .con-h > button:first-of-type:hover,
+.btn:first-of-type:hover {
+  background-color: #5dccbb;
+}
+header > .con-h > button:last-child:hover,
+.btn:last-child:hover {
+  background-color: #8896ff;
+}
+main {
+  width: 90%;
+  margin: 1rem auto;
+  text-align: center;
+}
+.snippet {
+  margin: 1rem auto 2rem;
+}
+.snippet > h3,
+.ft > .card > h3 {
+  /* font-size: 1.125rem; */
+  color: var(--clr-n-dark-grayish-blue);
+  font-weight: 600;
+}
+.snippet > p {
+  margin: 0rem auto 2rem;
+}
+.snippet > img,
+.clip > img {
+  width: 95%;
+  margin: 2.6rem auto;
+}
+.clip {
+  margin: 5rem auto 1rem;
+}
+.ft > .card {
+  text-align: center;
+  margin: 2.5rem auto;
+}
+.companys {
+  text-align: center;
+  margin: 5rem auto 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.companys > * {
+  margin: 2rem 0;
+}
+.end {
+  margin: 2rem auto 2rem;
+}
+.end > p {
+  margin: 0.5rem auto 2rem;
+}
+.btn {
+  margin: 1rem auto;
+}
+/* footer start  */
+footer {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  color: var(--clr-n-dark-grayish-blue);
+}
+footer > * {
+  margin: 0.5rem auto;
+}
+footer > .navbottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer > .navbottom a {
+  text-decoration: none;
+  color: var(--clr-n-grayish-blue);
+}
+/* hover state  */
+footer > .navbottom a:hover {
+  color: var(--clr-p-strong-cyan);
+}
+footer > img {
+  width: 15%;
+  margin: 3rem auto;
+  color: hsl(171, 66%, 44%);
+}
+footer > div > i {
+  margin: 0.2rem 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+footer > div > i:hover {
+  color: var(--clr-p-strong-cyan);
+}
+@media only screen and (min-width: 600px) {
+  header {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+  header > .con-h {
+    width: 50%;
+    padding: 5rem 1rem;
+  }
+  header > .con-h > img {
+    width: 15%;
+  }
+  header > .con-h > h3 {
+    font-size: 2.5rem;
+  }
+  header > .con-h > p {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+  header > .con-h > button,
+  .btn {
+    width: 30%;
+    margin: 0.5rem;
+    padding: 1rem 0.8rem;
+  }
+  .snippet {
+    padding: 1.5rem auto;
+  }
+  .snippet > .con-up > * {
+    width: 59%;
+    margin: 2rem auto 1rem;
+  }
+  .snippet > .con-up > h3 {
+    font-size: 2rem;
+    color: var(--clr-n-dark-grayish-blue);
+    font-weight: 600;
+  }
+  .snippet p {
+    color: var(--clr-n-grayish-blue);
+  }
+  .snippet > .flex-con {
+    display: flex;
+    margin: 5rem 0;
+  }
+
+  .snippet > .flex-con > .img-con > * {
+    width: 100%;
+    margin-left: -30%;
+  }
+  .snippet > .flex-con > .con-s > * {
+    margin: 2rem 0;
+    text-align: left;
+    width: 65%;
+  }
+  .snippet > .flex-con h3 {
+    color: var(--clr-n-dark-grayish-blue);
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+  .snippet > .flex-con p {
+    font-size: 1rem;
+  }
+  .clip {
+    width: 65%;
+    margin: 1rem auto;
+  }
+  .clip > p {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .ft {
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .ft > * {
+    flex: 1 1 20rem;
+  }
+  .ft > .title {
+    flex-basis: 70rem;
+  }
+  .ft > .card {
+    padding: 1.5rem 1rem;
+  }
+  .ft > .card > * {
+    margin: 0.5rem auto;
+  }
+  .companys {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .end {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer > img {
+    width: 3%;
+  }
+  footer > .navbottom {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 50px);
+    width: 40%;
+  }
+  .navbottom > * {
+    margin: 0.5rem auto;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
